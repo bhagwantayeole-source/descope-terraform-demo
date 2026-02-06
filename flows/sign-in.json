@@ -32,7 +32,7 @@
             }
           ]
         },
-        "screenId": "SC2ybnaZDjyYO9D4JBQo4Oq9KJkay",
+        "screenId": "SC39HzaGvVXexkFnb79Sed17DsLWl",
         "type": "screen",
         "view": {
           "x": 168,
@@ -168,7 +168,7 @@
             }
           ]
         },
-        "screenId": "SC2ybnacM1qKPTthEXWyiQpbR7Ijj",
+        "screenId": "SC39HzaJLQxLrSN7MNZUCyWg7jtu2",
         "type": "screen",
         "view": {
           "x": 684,
@@ -179,7 +179,7 @@
         "id": "13",
         "name": "Verified Successfully",
         "next": {},
-        "screenId": "SC2ybnadUEBvCm0kgqSFpJlzqVUQn",
+        "screenId": "SC39HzaIGl4EEoA2gwMzqQxDUNIxM",
         "type": "screen",
         "view": {
           "x": 1176,
@@ -435,7 +435,7 @@
             }
           ]
         },
-        "screenId": "SC2ybnadfVNveH4GmnIVgt8DD0tLg",
+        "screenId": "SC39HzaKZlr6PpTmPLxlxzSlPoC64",
         "type": "screen",
         "view": {
           "x": 2364,
@@ -461,7 +461,7 @@
   },
   "flowId": "sign-in",
   "metadata": {
-    "componentsVersion": "2.0.463",
+    "componentsVersion": "2.1.13",
     "description": "Default Descope Sign In flow; enables users to sign in via Magic Link, Social Logins or Biometrics (after initial registration). Includes risk-based MFA.",
     "name": "Sign In",
     "sharedInteractions": [
@@ -471,6 +471,7 @@
       }
     ]
   },
+  "references": {},
   "screens": [
     {
       "contents": {
@@ -890,7 +891,99 @@
           "subType": "social"
         }
       ],
-      "screenId": "SC2ybnaZDjyYO9D4JBQo4Oq9KJkay"
+      "screenId": "SC39HzaGvVXexkFnb79Sed17DsLWl"
+    },
+    {
+      "contents": {
+        "1sMmkeVxVT": {
+          "custom": {},
+          "displayName": "Error Message",
+          "hidden": false,
+          "isCanvas": false,
+          "linkedNodes": {},
+          "nodes": [],
+          "parent": "ROOT",
+          "props": {
+            "data-type": "error-message",
+            "full-width": false,
+            "id": "1sMmkeVxVT",
+            "italic": false,
+            "mode": "error",
+            "text-align": "center",
+            "variant": "body1"
+          },
+          "type": {
+            "resolvedName": "ErrorMessage"
+          }
+        },
+        "LmrSIGOWZb": {
+          "custom": {},
+          "displayName": "Text",
+          "hidden": false,
+          "isCanvas": false,
+          "linkedNodes": {},
+          "nodes": [],
+          "parent": "ROOT",
+          "props": {
+            "children": "You're authenticated, you can close this window now",
+            "full-width": false,
+            "id": "LmrSIGOWZb",
+            "italic": false,
+            "mode": "primary",
+            "text-align": "center",
+            "variant": "subtitle1"
+          },
+          "type": {
+            "resolvedName": "Text"
+          }
+        },
+        "PUZgvFyUAB": {
+          "custom": {},
+          "displayName": "Image",
+          "hidden": false,
+          "isCanvas": false,
+          "linkedNodes": {},
+          "nodes": [],
+          "parent": "ROOT",
+          "props": {
+            "alt": "Image",
+            "height": "50px",
+            "id": "PUZgvFyUAB",
+            "src": "https://imgs.descope.com/flows/common/v1/green-checkmark.png"
+          },
+          "type": {
+            "resolvedName": "Image"
+          }
+        },
+        "ROOT": {
+          "custom": {},
+          "displayName": "Container",
+          "hidden": false,
+          "isCanvas": true,
+          "linkedNodes": {},
+          "nodes": [
+            "PUZgvFyUAB",
+            "LmrSIGOWZb",
+            "1sMmkeVxVT"
+          ],
+          "props": {
+            "align": "center",
+            "background": "",
+            "data-editor-type": "container",
+            "direction": "column",
+            "id": "ROOT",
+            "justify": "center",
+            "paddingX": "4",
+            "paddingY": "8",
+            "spaceBetween": "4",
+            "width": "100%"
+          },
+          "type": {
+            "resolvedName": "Container"
+          }
+        }
+      },
+      "screenId": "SC39HzaIGl4EEoA2gwMzqQxDUNIxM"
     },
     {
       "contents": {
@@ -1097,100 +1190,7 @@
           "label": "Send again"
         }
       ],
-      "screenId": "SC2ybnacM1qKPTthEXWyiQpbR7Ijj"
-    },
-    {
-      "contents": {
-        "1sMmkeVxVT": {
-          "custom": {},
-          "displayName": "Error Message",
-          "hidden": false,
-          "isCanvas": false,
-          "linkedNodes": {},
-          "nodes": [],
-          "parent": "ROOT",
-          "props": {
-            "data-type": "error-message",
-            "full-width": false,
-            "id": "1sMmkeVxVT",
-            "italic": false,
-            "mode": "error",
-            "text-align": "center",
-            "variant": "body1"
-          },
-          "type": {
-            "resolvedName": "ErrorMessage"
-          }
-        },
-        "LmrSIGOWZb": {
-          "custom": {},
-          "displayName": "Text",
-          "hidden": false,
-          "isCanvas": false,
-          "linkedNodes": {},
-          "nodes": [],
-          "parent": "ROOT",
-          "props": {
-            "children": "You're authenticated, you can close this window now",
-            "full-width": false,
-            "id": "LmrSIGOWZb",
-            "italic": false,
-            "mode": "primary",
-            "text-align": "center",
-            "variant": "subtitle1"
-          },
-          "type": {
-            "resolvedName": "Text"
-          }
-        },
-        "PUZgvFyUAB": {
-          "custom": {},
-          "displayName": "Image",
-          "hidden": false,
-          "isCanvas": false,
-          "linkedNodes": {},
-          "nodes": [],
-          "parent": "ROOT",
-          "props": {
-            "alt": "Image",
-            "height": "50px",
-            "id": "PUZgvFyUAB",
-            "src": "https://imgs.descope.com/flows/common/v1/green-checkmark.png"
-          },
-          "type": {
-            "resolvedName": "Image"
-          }
-        },
-        "ROOT": {
-          "custom": {},
-          "displayName": "Container",
-          "hidden": false,
-          "isCanvas": true,
-          "linkedNodes": {},
-          "nodes": [
-            "PUZgvFyUAB",
-            "LmrSIGOWZb",
-            "1sMmkeVxVT"
-          ],
-          "props": {
-            "align": "center",
-            "background": "",
-            "data-editor-type": "container",
-            "direction": "column",
-            "id": "ROOT",
-            "justify": "center",
-            "paddingX": "4",
-            "paddingY": "8",
-            "spaceBetween": "4",
-            "width": "100%"
-          },
-          "type": {
-            "resolvedName": "Container"
-          }
-        }
-      },
-      "interactions": [],
-      "screenId": "SC2ybnadUEBvCm0kgqSFpJlzqVUQn"
+      "screenId": "SC39HzaJLQxLrSN7MNZUCyWg7jtu2"
     },
     {
       "contents": {
@@ -1439,7 +1439,7 @@
           "label": "Send again"
         }
       ],
-      "screenId": "SC2ybnadfVNveH4GmnIVgt8DD0tLg"
+      "screenId": "SC39HzaKZlr6PpTmPLxlxzSlPoC64"
     }
   ]
 }
